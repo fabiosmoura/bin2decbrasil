@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
+    <script src="https://kit.fontawesome.com/cec7d8c799.js" crossorigin="anonymous"></script>
+    
+    <title>Bin2Dec - Conversor</title>
+</head>
+<body>
+    <div id="cabeca">
+    <header>
+        <h1>Bin2Dec</h1>
+        <p id="subtitulo"><strong>Binário e Decimal conversor</strong></p>
+    </header>
+    <div id="forme">
+       
+            <span id="binario"> Numero Binário:&nbsp;&nbsp;&nbsp;<input type="text" name="binario" id="inputbin" fname="inputbin" maxlength="8" autofocus autocomplete="off"/></span>
+            <p id="numdec">Numero Decimal:&nbsp;&nbsp;<span id="decimal"></span></p>
+            <p id="botao"><button onclick="converter()">Converter</button></p>
+       
+            
+    </div>
+    </div>
+    <div id="rodape">
+       <i class="far fa-envelope-open"></i> bin2decconv@gmail.com
+
+    </div>
+
+  <script>
+      function converter() {
+    let numerobinario = document.getElementById('inputbin');
+    let numerodecimal = document.getElementById('decimal');
+    let exreg = /[0-1]/g;
+    if (exreg.test(numerobinario.value)== true) {
+        let converternumero =parseInt(numerobinario.value,2);
+        numerodecimal.innerHTML = converternumero;
+    } else {
+        numerodecimal.innerHTML = "Não é binario";
+    }
+
+    
+    
+
+
+    }
+    
+
+   
+  </script>
+</body>
+</html>
