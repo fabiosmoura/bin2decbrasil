@@ -1,0 +1,50 @@
+#cabeca {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: rgb(245, 105, 6);
+    margin-top: 30px;
+}
+header{
+    text-align: center;
+    color: rgba(52, 54, 150, 0.554);
+}
+#forme{
+    margin-left: 30px;
+    padding-left: 40%;
+}
+#binario{
+    color: rgb(54, 23, 231);
+}
+#numdec{
+    color: darkorange;
+}
+input {
+    border-radius: 3px;
+    border-width: thin;
+    border-color:  rebeccapurple;
+    background-color: rgb(236, 193, 140);
+    color: rgb(60, 21, 133);
+    font-weight: bold;
+    
+}
+#subtitulo{
+    color: rgb(235, 22, 22);
+}
+button {
+    background-color: blueviolet;
+    color: white;
+}
+#rodape {
+    padding-left: 45%;
+    border-style: hidden;
+    background-color: honeydew;
+    padding-bottom: 10%;
+    font-style: italic;
+    font-size: small;
+}
+#decimal {
+    font-weight: bold;
+    color: red;
+}
+ 
